@@ -2,7 +2,7 @@
 def possible_bipartition(dislikes)
   total_size = dislikes.length()
   if total_size > 0
-    q = Array.new()
+    q = Queue.new()
     marked = Hash.new()
     marked_size = 0
     q.push([marked_size, true])
